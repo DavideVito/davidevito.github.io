@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Relazione scuola lavoro di Davide Vitiello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stili/stile.css">
+    </link>
+    <link rel="stylesheet" href="Stili/SlideShow/SlideShow.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="JavaScript/app.js"></script>
+    <scirpt src="JavaScript/SlideShow/slideShow.js"></scirpt>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" type="image/png" href="../Immagini/LogoItis.jpg" />
+
+</head>
+
+<body>
+    <div id="main">
+        <p class="titolo" style="margin-bottom: 30px;">ALTERNANZA SCUOLA LAVORO</p>
+        <hr class="separatore">
+        <p class="studente">Davide Vitiello</p>
+
+
+        <div class="row">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+
+                    <img class="immaginiSlide" onload="showSlides(slideIndex)" src="Immagini/LogoAdecco.png"
+                        style="position: relative; left: 25%;  width: 48%; height: 30%;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="immaginiSlide" onload="showSlides(slideIndex)" src="Immagini/LogoSintra.png"
+                        style="position: relative; left: 25%;  width: 48%; height: 30%;">
+                </div>
+
+
+                <div class="mySlides fade">
+                    <img class="immaginiSlide" onload="showSlides(slideIndex)" src="Immagini/LogoMIUR.png"
+                        style="position: relative; left: 25%;  width: 48%; height: 25%;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+
+
+
+
+        <img id="freccia" src="Immagini/Freccia.gif" width="130" height="130" onclick="clickFreccia()">
+
+        <div id="menu">
+
+            <p class="testo">Tocca o clicca sulla sezione della quale vorresti conoscere di più</p>
+            <div class="row">
+                <div class="col-md-1"></div>
+
+                <ul class="menuDiNavigazione">
+
+                    <div class="col-md-3">
+                        <li class="testo elementoMenu">
+                            <a href="Aziende">
+                                <p class="sottotitolo">Aziende che hanno collaborato con noi</p>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li class="testo elementoMenu">
+                            <a href="Problema/">
+                                <p class="sottotitolo">Problema</p>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li class="testo elementoMenu">
+                            <a href="Soluzione/">
+                                <p class="sottotitolo">Soluzione</p>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li class="testo elementoMenu">
+                            <a href="Team/">
+                                <p class="sottotitolo">Team</p>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="col-md-2">
+                        <li class="testo elementoMenu">
+                            <a href="Creazione">
+                                <p class="sottotitolo">Specifiche e problematiche durante la creazione</p>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li class="testo elementoMenu">
+                            <a href="ValutazioniPersonali/">
+                                <p class="sottotitolo">Valutazioni Personali</p>
+                            </a>
+                        </li>
+                    </div>
+
+
+                </ul>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    let slides = null;
+    showSlides(slideIndex);
+</script>
+
+
+</html>
